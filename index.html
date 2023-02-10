@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pogodi broj</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="config.js"></script>
+</head>
+
+<body onload="proizvoljneIndexVrednosti()">
+    <main>
+        <h1>Pogodi broj</h1>
+        <h4>Igra je zamisljena tako sto pogadjate brojeve od <span id="min_num"></span> do <span id="max_num"></span>. Imate <span id="dozvoljen_br_pokusaja"></span> pokusaja.</h4>
+
+            <div id="test"></div>
+            <div id="statistic_div">
+                <p>Uneti broj: <span id="uneto">Još niste pogadjali broj!</span></p>
+                <p hidden>Zamisljeni broj: <span id="zamisljeno"></span></p>
+                <p>Pokušaj broj: <span id="br_pokusaja">0</span></p>
+                <p>Imate <span id="preostali_pokusaji">5</span> pokušaja.</p>
+            </div>
+
+            <div class="div_buttons">
+                <button onclick="brojanjePokusaja()" id="unos_broja_button">Unesi broj</button>
+                <button onclick="ponovnoUcitavanje()" id="novi_pokusaji_button" disabled>Novih 5 pokušaja</button>
+            </div>
+    </main>
+</body>
+
+<script type="text/javascript" src="js.js"></script>
+
+</html>
